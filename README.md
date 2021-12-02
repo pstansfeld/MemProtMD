@@ -1,5 +1,9 @@
 # MemProtMD
 
+<p align="center">
+  <img width="500" src="mr-membrane-protein.png">
+</p>
+
 <b>Workflows</b>
 
 <u>MemProtMD-insane.ipynb</u>
