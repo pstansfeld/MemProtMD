@@ -1,12 +1,12 @@
 # MemProtMD
 
-Workflows
+<b>Workflows</b>
 
-MemProtMD-Insane.ipynb:
+<u>MemProtMD-Insane.ipynb</u>
 
 PDB File -> Memembed to orient -> martinize -> insane -> CG2AT -> Atomistic PDB in membrane
 
 
-MemProtMD-Self-Assembly.ipynb:
+<u>MemProtMD-Self-Assembly.ipynb</u>
 
 PDB File -> Memembed to orient -> martinize -> self-assemble -> CG2AT -> Atomistic PDB in membrane
