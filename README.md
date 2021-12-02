@@ -4,7 +4,7 @@
   <img width="300" src="mr-membrane-protein.png">
 </p>
 
-<b>Google Colab Workflows</b>
+<b>A pair of Google Colab Workflows for inserting protein structures into membranes</b>
 
 <u>MemProtMD-insane.ipynb</u>
 
