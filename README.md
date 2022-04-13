@@ -30,11 +30,11 @@ The references for each of the methods used in the workflows are cited below.
 
 <pre> 2x PDBs File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> </pre>
 
-<u>[MemProtMD Association](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Association.ipynb)</u> - Set-up for Self-Association of a soluble protein structures with a membrane.
+<u>[MemProtMD Association](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Association.ipynb)</u> - Set-up for Self-Association of a soluble protein structure with a membrane.
 
 <pre> PDB File -> martinize<sup>2</sup> -> insane<sup>3</sup> </pre>
 
-<u>[MemProtMD Association With a Membrane Protein](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Association_Membrane_Protein.ipynb)</u> - Set-up for Self-Association of a soluble protein structures with a membrane, which contains a membrane protein.
+<u>[MemProtMD Association with a Membrane Protein](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Association_Membrane_Protein.ipynb)</u> - Set-up for Self-Association of a soluble protein structure with a membrane, which contains a membrane protein.
 
 <pre> 2x PDBs File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> </pre>
 
