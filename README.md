@@ -39,6 +39,10 @@ The references for each of the methods used in the workflows are cited below.
 
 <pre> 2x PDBs File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> </pre>
 
+<u>[Energy Minimise](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/PDB_fix.ipynb)</u> - Add any missing side-chains and energy minimise a protein structure for use with MemProtMD.
+
+<pre> PDBs File -> PDB2PQR<sup>7</sup> -> minimisation<sup>5</sup> </pre>
+
 <b>References</b>
 
 1. Nugent & Jones (2013) Membrane protein orientation and refinement using a knowledge-based statistical potential. BMC Bioinformatics. https://doi.org/10.1186/1471-2105-14-276 [https://github.com/psipred/MemEmbed]
@@ -47,3 +51,4 @@ The references for each of the methods used in the workflows are cited below.
 4. Stansfeld et al. (2015) MemProtMD: automated insertion of membrane protein structures into explicit lipid membranes. Structure. https://doi.org/10.1016/j.str.2015.05.006 
 5. Abraham et al. (2015) GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputer. SoftwareX. https://doi.org/10.1016/j.softx.2015.06.001
 6. Vickery & Stansfeld (2021) CG2AT2: an Enhanced Fragment-Based Approach for Serial Multi-scale Molecular Dynamics Simulations. JCTC. https://doi.org/10.1021/acs.jctc.1c00295 [https://github.com/pstansfeld/cg2at]
+7. Jurrus et al. (2018) Improvements to the APBS biomolecular solvation software suite. Protein Science. https://onlinelibrary.wiley.com/doi/10.1002/pro.3280
