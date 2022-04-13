@@ -6,6 +6,8 @@
 
 <b>A selection of Google Colab Workflows for inserting protein structures into membranes</b>
 
+The references for each of the methods used in the workflows are cited below. 
+
 <u>[MemProtMD with Insane](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_insane.ipynb)</u> - Assembly of a predefined membrane around the input protein structure
 
 <pre>Protein PDB File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> -> CGMD<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic PDB in membrane</pre>
