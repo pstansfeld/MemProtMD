@@ -6,6 +6,7 @@
 
 <b>A selection of Google Colab Workflows for inserting protein structures into membranes</b>
 
+We recomend using Google Chrome or Firefox to run, as Safari has issues with the sizes of a PDB file upload.
 The references for each of the methods used in the workflows are cited below. 
 
 <u>[MemProtMD with Insane](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_insane.ipynb)</u> - Assembly of a predefined membrane around an input protein structure
