@@ -6,25 +6,25 @@
 
 <b>A selection of Google Colab Workflows for inserting protein structures into membranes</b>
 
-<u>MemProtMD-insane.ipynb</u> - Assembly of a predefined membrane around the input protein structure
+<u>[MemProtMD-insane](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Insane.ipynb)</u> - Assembly of a predefined membrane around the input protein structure
 
 <pre>Protein PDB File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> -> CGMD<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic PDB in membrane</pre>
 
 
-<u>MemProtMD-Self-Assembly.ipynb</u> - Self-Assembly of a randomly oriented lipids into a bilayer around the input protein structure
+<u>[MemProtMD-Self-Assembly](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Self_Assembly.ipynb)</u> - Self-Assembly of a randomly oriented lipids into a bilayer around the input protein structure
 
 <pre>Protein PDB File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> self-assemble<sup>4</sup> -> CGMD<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic PDB in membrane</pre>
 
-<u>MemProtMD-single-pass-insane.ipynb</u> - Assembly of a predefined membrane around a single-pass transmembrane structure
+<u>[MemProtMD-single-pass-insane](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Single_Pass_Insane.ipynb)</u> - Assembly of a predefined membrane around a single-pass transmembrane structure
 
 <pre>Amino Acid Sequence -> PyMOL -> TM helix PDB File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> -> CGMD<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic PDB in membrane</pre>
 
 
-<u>MemProtMD-single-pass-Self-Assembly.ipynb</u> - Self-Assembly of a randomly oriented lipids into a bilayer around the input protein structure
+<u>[MemProtMD-single-pass-insane](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Single_Pass_Self-Assembly.ipynb)</u> - Self-Assembly of a randomly oriented lipids into a bilayer around the input protein structure
 
 <pre>Amino Acid Sequence -> PyMOL -> TM helix PDB File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> self-assemble<sup>4</sup> -> CGMD<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic PDB in membrane</pre>
 
-<u>MemProtMD-Multimer.ipynb</u> - Set-up for Self-Association of 2 membrane protein structures - 1 central 'target' protein and 8 'search' proteins
+<u>[MemProtMD-Multimer](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Multimer.ipynb)</u> - Set-up for Self-Association of 2 membrane protein structures - 1 central 'target' protein and 8 'search' proteins
 
 <pre> 2x PDBs File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> </pre>
 
