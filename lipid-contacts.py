@@ -1,7 +1,7 @@
 import matplotlib as mpl
 mpl.use('Agg')
 import sys
-sys.path.append("/storage/chem/lfsmgr/SRG/MemProtMD3/")
+sys.path.append("/content/")
 import MDAnalysis as mda
 import numpy as np
 from contacts import LipidContactGenerator
@@ -38,18 +38,18 @@ data = contacts.time_aggregate(aggregate_function=lambda x:sum(x.values())/conta
 
 data.to_dataframe().to_csv("Lipid-contacts.csv")
 
-oant = data.to_dataframe()
+lipid = data.to_dataframe()
 
-oant = pd.concat([oant, df], axis=1, sort=False, join='inner')
+lipid = pd.concat([lipid, df], axis=1, sort=False, join='inner')
 
-oant['Resid']=oant.index
-oant['combined']=oant['Residue']+oant.index.astype(str)
+lipid['Resid']=lipid.index
+lipid['combined']=lipid['Residue']+lipid.index.astype(str)
 
 U.add_TopologyAttr(mda.core.topologyattrs.Tempfactors(np.zeros(len(All))))
 
 for i in All:
-	if i.residue.resid in oant.index:
-		i.tempfactor = oant.loc[i.residue.resid,['POPE']].values[0]
+	if i.residue.resid in lipid.index:
+		i.tempfactor = lipid.loc[i.residue.resid,['POPE']].values[0]
 
 U.trajectory[0]
 All.write("POPE-contacts.pdb")
@@ -57,8 +57,8 @@ All.write("POPE-contacts.pdb")
 U.add_TopologyAttr(mda.core.topologyattrs.Tempfactors(np.zeros(len(All))))
 
 for i in All:
-        if i.residue.resid in oant.index:
-                i.tempfactor = oant.loc[i.residue.resid,['POPG']].values[0]
+        if i.residue.resid in lipid.index:
+                i.tempfactor = lipid.loc[i.residue.resid,['POPG']].values[0]
 
 U.trajectory[0]
 All.write("POPG-contacts.pdb")
@@ -66,8 +66,8 @@ All.write("POPG-contacts.pdb")
 U.add_TopologyAttr(mda.core.topologyattrs.Tempfactors(np.zeros(len(All))))
 
 for i in All:
-        if i.residue.resid in oant.index:
-                i.tempfactor = oant.loc[i.residue.resid,['CARD']].values[0]
+        if i.residue.resid in lipid.index:
+                i.tempfactor = lipid.loc[i.residue.resid,['CARD']].values[0]
 
 U.trajectory[0]
 All.write("CARD-contacts.pdb")
@@ -75,8 +75,8 @@ All.write("CARD-contacts.pdb")
 U.add_TopologyAttr(mda.core.topologyattrs.Tempfactors(np.zeros(len(All))))
 
 for i in All:
-        if i.residue.resid in oant.index:
-                i.tempfactor = oant.loc[i.residue.resid,['W']].values[0]
+        if i.residue.resid in lipid.index:
+                i.tempfactor = lipid.loc[i.residue.resid,['W']].values[0]
 
 U.trajectory[0]
 All.write("Water-contacts.pdb")
