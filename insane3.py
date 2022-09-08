@@ -295,8 +295,20 @@ lipidsa.update({
     "HBHT": (moltype, " -   -   -   R1   R2   R3   R4   R5   R6   R7   R8   C1   C2   C3   -   -   -   - "),
 })
 
+# Isoprenyls
+moltype = "Isoprenyls"
+lipidsx[moltype] = (    1,  1,  0,  0,  0,  1,  0,  1,  2,  1,  2,  2,  2,   1,  1,  2,  2,  0,0.5,  0,  0,  0,  0,  0, 0.5,  1,  1,  1,  1,  1)
+lipidsy[moltype] = (    1,  0,  1,  0,  0,  0,  1,  1,  1,  2,  2,  2,  1,   2,  2,  1,  2,  0,  0,  0,  0,  0,  0,  0,   0,  0,  0,  0,  0,  0)
+lipidsz[moltype] = (   10, 10, 10, 10,  9,  9,  9,  9,  9,  9,  9, 10, 10,  10, 11, 11, 11,  8,  7,  6,  5,  4,  3,  2,   1,  2,  3,  4,  5,  6)
+lipidsa.update({
+    "UDP2": (moltype," -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  PO1 PO2 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 CP11"),
+    "UDP1": (moltype," -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  PO2 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 CP11"),
+    "LIP2": (moltype,"GB1 GB2 GB3 GB4 MB1 MB2 MB3 MB4 MB5 B1P B2P B3P B4P B5P B6P B7P B8P PO1 PO2 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 CP11"),
+    "LIP1": (moltype,"-   -   -   -   MB1 MB2 MB3 MB4 MB5 B1P B2P B3P B4P B5P B6P B7P B8P PO1 PO2 CP1 CP2 CP3 CP4 CP5 CP6 CP7 CP8 CP9 CP10 CP11"),
+})
+
 # Lists for automatic charge determination
-charges = {"HPPA":-1,"4HPA":-1,"CYST":-1, "GLYP":-1, "GLYM":-1, "ARG":1, "LYS":1, "ASP":-1, "GLU":-1, "DOPG":-1, "POPG":-1, "DOPS":-1, "POPS":-1, "DSSQ":-1, "KPG":+1, "LIPA":-2, "PGIN":-1, "REMP":-6, "RAMP":-10, "OANT":-10, "CARD":-2, "A2P2":-1, "APM2":-1, "APM6":-1}
+charges = {"HPPA":-1,"4HPA":-1,"CYST":-1, "GLYP":-1, "GLYM":-1, "ARG":1, "LYS":1, "ASP":-1, "GLU":-1, "DOPG":-1, "POPG":-1, "DOPS":-1, "POPS":-1, "DSSQ":-1, "KPG":+1, "LIPA":-2, "PGIN":-1, "REMP":-6, "RAMP":-10, "OANT":-10, "CARD":-2, "A2P2":-1, "APM2":-1, "APM6":-1, "UDP1":-1, "UDP2":-2}
 
 a,  b  = math.sqrt(2)/20, math.sqrt(2)/60
 ct, st = math.cos(math.pi*109.47/180), math.sin(math.pi*109.47/180) # Tetrahedral
