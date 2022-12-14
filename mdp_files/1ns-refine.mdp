@@ -1,8 +1,8 @@
 integrator           = md
-define               = -DPOSRES
+define               = -DREFINE
 tinit                = 0.0
 dt                   = 0.002
-nsteps               = 5000000
+nsteps               = 500000
 nstxout              = 500000
 nstvout              = 500000
 nstfout              = 0
