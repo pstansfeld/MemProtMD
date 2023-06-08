@@ -15,7 +15,7 @@ import datetime
 from jax import tree_util
 
 
-PATH_TO_INSANE = "../../../Orient/Orient_JAX/Orient_build/Insane4MemBrain.py"
+PATH_TO_INSANE = "/content/Insane4MemBrain.py"
 
 warnings.filterwarnings('ignore')
 
