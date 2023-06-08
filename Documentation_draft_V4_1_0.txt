@@ -1,0 +1,123 @@
+This is version 4_1_0 of MemBrain.
+
+The purpose of this code is to orient membrane proteins in a lipid bi-layer. Currently the composition of the bi-layer cannot be specified and a generic template phospholipid is used. 
+
+
+####################################### INSTALLATION #####################################
+
+To run the code you will need to make sure the paths are all correct. In particular you will need to specify the path to the modifed insane code (This is called Insane4MemBrain.py). There is a variable called PATH_TO_INSANE at the top of MemBrain_V4_1_0.py. This will be streamlined once the code is published.
+
+You will also need to run export NUM_CPU={number of cpus} before running the code. This may be changed in future to be more streamlined. I would reccomend using 18 CPUs on a workstation.
+
+To run the code you should use MemBrain_V4_1_0_Script.py with some of the flags listed below. MemBrain_V4_1_0_Script.py -h can be run for a help message.
+
+One should probaly use a virtrual env with the following modules loaded:
+python = "^3.7"
+jax = {version = "^0.3.25", extras = ["cpu"]}
+matplotlib = "^3.5.3"
+
+You can install these with the following commands (I think).
+
+pip install jax["cpu"]
+pip install matplotlib
+
+#################################### OUTPUTS #############################################
+
+MemBrain will output the following things.
+
+orientation.txt : This is a text file that contains a list of the final configurations ranked by number of hits. It also contains a relative potential, 0 indicates it is fully in water. There is also Force max +/-, this is not currently important so can be ignored.
+
+local_minima_orientation.png : This is a representation of how spread out the local minima are. The more white the more confidence can be placed in the rank 1. This is only true for integral membrane proteins as peripheral ones are a little more complex. 
+
+local_minima_potential.png : This is a representation of the potential of the final configuration from a given starting configuration. This does not really provide any additional information but it complements the other graph.
+
+Rank_{n}: This is a folder that contains all the relevant information for a particular rank. It contains the following files/folders:
+
+	- oriented_rank_{n}.pdb : This is the nth ranked configuration. It will contain the protein (atomistic or coarse grain depending on the input) and a dummy membrane. The rank is based on number of hits.
+
+	- info_rank_{n}.txt : This contains some information about the orientation.
+
+	- CG_System_rank_{n} : This folder contains a CG-system built using insane and the rank {n} config. It also contains a topology file. 
+	
+	- PG_potential_curve.png : This is the potential curve for the position of the PG cell wall. This is only outputted when you use -pg.
+	
+	- mem_curve_rank{n}_{0/1}.png: This is a graphical representation of the curvature of the membrane. 0/1 indicates the outer/inner membrane (This is WIP and may be removed).
+	
+	- mem_thick_rank{n}_{0/1}.png: This is a graphical representation of the thinning of the membrane. 0/1 indicates the outer/inner membrane (This is WIP and may be removed).
+
+Note that there will be some WARNINGs in the output. One of these refers to JAX not finding a GPU, this can be safely ignored. The second of these is a warning from tensorflow about stuck threads. This is always a false positive so can be ignored. I have not yet found a way to supress these warnings.
+
+################################################ FLAGS ###############################################
+MemBrain takes the followinig command line args:
+
+-f, --file_name : This is the input protein that you wish to orient. It must be a .pdb currently although in future .gro may also work. The protein can be either atomistic or coarse grained. The code should detect which it is and ingnore unknown atom/bead types, however in the case of an error please let me know and send me the file which caused it.
+
+-o, --output : This is the name of the ouput directory. The code will deafult to a folder called Orient in the directory where the code is run. This should work however it has not yet been thoroughly tested. The format shoudl be -o "Output_dir/". Note that a backslash is required. This will potentially be updated in future.
+
+-ni, --iters : This indicates the maximum number of minimisation iteration the code will carry out. The default value of 150 should be enough in most cases. For some systems a smaller value can also work, so if greater speed is needed this can be reduced. Equally if the final output does not seem satisfactory then increasing this value can sometimes fix this, or at least provide information.
+
+-ng, --grid_size : This is the number of initial starting configurations from which to minimise. It defaults to 20. For maximum efficiency this should be a multiple of the number of CPUs being used. Having a greater number of starting configurations will sample the space of minima better, however there is diminishing returns and generally no more than 40 will be needed.
+
+-dm, --dual_membrane : This toggles dual membrane minimisations. Essentially this allows the code to split the membrane into a inner and outer membrane and minimise the distance between them. Only use this is you know your protein will span the periplasm or is a gap junction etc.
+
+-ch, --charge : This value corresponds to the partial charge of the (inner) membrane.
+
+-ch_o, --charge_outer : This is the charge for the outer membrane only. This will do nothing without -dm.
+
+-mt, --membrane_thickness : This is the inital thickness of the (inner) membrane.
+
+-mt_o, --outer_membrane_thickness : This is the initial thickness of the outer membrane. This will do nothing without -dm.
+
+-mt_opt, --membrane_thickness_optimisation : This toggles membrane thickness optimisation. This cannot be used with curvature minimisation (currently).
+
+-tm, --transmembrane_residues : This inidicates which residues are expected to be transmembrane. THe format for this is a comma seperated list of ranges e.g. 10-40,50-60. 
+
+-pg --predict_pg_layer : This toggels PG cell wall prediction for dual membrane minimisations. This is fairly experimental and is not the most accurate at this time.
+
+-pr, --peripheral : This tells the code to use an alternative method for determining inital insertion depth. The usual method is to place a weighted mean of the hydrophobic residues at the center of the membrane, this clearly does not work for a peripheral membrane protein or for a protein that does not fully span the membrane. The alternative method scans all possible insertion depths within a range and selects the lowest. This does not work with -dm.
+
+-w, --use_weights : This toggles the use of b-factors to weight the minimsation. This is useful if part of your protein is particularily flexible or poorly predicted by alphafold. Do not use this if all your b-factors are 0 as currently this will just break with not indication of why (This will be changed soon).
+
+-fc, --force_calc : This indicated on how many ranks a force calculation should be run. This is similar in idea to a potential of mean force. Currently this is not useful, but in future it may help classifying if a protein is a membrane protein or peripheral etc.
+
+-c, --curvature : This toggles curvature minimisation. This takes considerably longer than normal minimsation (10-15 minutes). The curvature information will be in the output pdb and also in a folder called Membrane_Data. Some proteins (particularily peripheral proteins) orient better with curvature on. The curvature minimisation happens after the inital -ni iterations, so in these cases setting -ni to 0 can be helpful. Note that for peripheral proteins the ranking system may not be the best as potential energy is more important than %hits.
+
+This can be used with -dm but it is not fully tested and may be removed in future.
+
+-c_ni, --curvature_iters : The number of iteration for the curvature minimisations. Generally needs to be a bit higher than for normal.
+
+-itp, --itp_file : The code makes heavy use of the martini parameters. The path to a martini 3 itp file should go here. There is a default specified in MemBrain_V4_0_0_Script.py but this is currently for my system so should be changed if you wish to use it.
+
+-bd, --build_system : This should be a number that indicates how many of the final configurations should be build using Insane. This will only work if your input file is coarse grain.
+
+-bd_args, --build_arguments: These are the arguments to pass to Insane. This mostly includes padding and lipid composition etc. There are some additional build args for periplasm spanning systems. These are as follows.
+
+	-lo,-uo are the counter parts of -l,-u for defining lipid composition of the outer membrane only, if asymetry is required.
+
+
+If one is using only Insane4MemBrain then the following flag may be useful.
+
+-ps : This takes a value in nm that inidactes that distance between the inner and outer membrane.
+
+
+######################################################### EXAMPLES ##########################################################
+
+export NUM_CPU=20 #This should be run before any other commands
+
+#The below will orient input_file.pdb on a grid of 40 starting configurations with 150 minimisation iterations
+python MemBrain_V4_1_0_Script.py -f input_file.pdb -o "Output_dir/" -ng 40 -ni 150 -itp "PATH/TO/MARTINI"
+
+
+
+#The below will orient input_file.pdb on a grid of 40 starting configurations. It will skip the normal minimisation and do 150 iterations of curvature and orientation minimisation.
+python MemBrain_V4_1_0_Script.py -f input_file.pdb -o "Output_dir/" -ng 40 -ni 0 -c -c_ni 150 -itp "PATH/TO/MARTINI"
+
+
+
+
+#The below will orient input_file.pdb on a grid of 40 starting configurations with 150 minimisation interations. It will be minimised with a double membrane system. Once minimised thecode will build the top 2 ranks using insane. The CG system built with insane will have asymentric membranes, one with POPE,POPG and CARD the other with only LIPA.
+python MemBrain_V4_1_0_Script.py -f input_file.pdb -o "Output_dir/" -ng 40 -ni 150 -dm -bd 2 -bd_args "-x 20 -y 20 -z 35 -salt 0.15 -sol W -l POPE:7 -l POPG:2 -l CARD:1 -lo LIPA" -itp "PATH/TO/MARTINI"
+
+
+
+If anything is not clear or something is not working properly please let me know. I can be contacted via email at u1707251@live.warwick.ac.uk
