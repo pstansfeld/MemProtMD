@@ -1797,7 +1797,7 @@ class MemBrain:
 			zdist = min_zdist[i]/10
 			print("Building rank "+str(i+1)+" with insane:")
 			cg_sys_dir = rank_dir+"CG_System_rank_"+str(i+1)+"/"
-			run_str = "python2 "+PATH_TO_INSANE+" "+build_args.strip()+" -o "+cg_sys_dir+"CG-system.gro -p "+cg_sys_dir+"topol.top -f "+cg_sys_dir+"protein-cg.pdb"
+			run_str = "python2.7 "+PATH_TO_INSANE+" "+build_args.strip()+" -o "+cg_sys_dir+"CG-system.gro -p "+cg_sys_dir+"topol.top -f "+cg_sys_dir+"protein-cg.pdb"
 			if(zdist > 1e-6):
 				run_str += " -ps "+str(zdist)
 			err_val = os.system(run_str)
