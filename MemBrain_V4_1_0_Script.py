@@ -39,7 +39,7 @@ parser.set_defaults(curvature=False)
 parser.add_argument("-c_ni","--curvature_iters",help="Number of iterations for curvature minimisation")
 parser.set_defaults(curvature_iters=150)
 parser.add_argument("-itp","--itp_file",help="Path to force field (martini_v3.itp)")
-parser.set_defaults(itp_file="/content/martini_v3.itp")
+parser.set_defaults(itp_file="/home/maths/maukjg/Cardiolipins/E-coli_complex/Orient/Orient_JAX/Orient_build/martini_v3.itp")
 parser.add_argument("-bd","--build_system",help = "Build a MD ready CG-system for ranks < n (Default: n=0)")
 parser.set_defaults(build_system=0)
 parser.add_argument("-bd_args","--build_arguments",help="Arguments to pass to insane when building system")
@@ -209,7 +209,9 @@ if(orient_dir == None):
 	if(not os.path.exists("Orient/")):
 		os.mkdir("Orient/")
 	orient_dir = "Orient/"
-	
+else:
+	if(not os.path.exists(orient_dir)):
+		os.mkdir(orient_dir)
 
 timer = time.time()
 
