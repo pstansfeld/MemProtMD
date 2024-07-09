@@ -188,6 +188,11 @@ lipidsa.update({      # 1   2   3   4   5   6   7   8   9  10  11  12  13  14  1
     "TMMA": (moltype,  "GC1 GC2 GC3 GC4 GC5 GC6 COO COH C1A C2A C3A C4A C5A C6A C7A C8A C9A C10A C11A C12A C13A C14A C15A C1B C2B C3B C4B C5B C6B OOH"),
 })
 
+moltype = "type_DPG3"
+lipidsx[moltype] = (-7.96, -7.93, -7.75, -7.88, -7.93, -8.21, -7.74, -7.96, -8.44, -8.77, -8.05, -9.09, -8.04, -8.42, -8.02, -7.71, -8.07, -7.97, -7.95, -7.82, -7.66, -7.89, -8.00)
+lipidsy[moltype] = (0.19, -0.09, -0.69, -0.20, -0.35, -0.36, -0.87, -0.53, -0.48, -0.81, -0.92, -0.97, -1.23, -0.74, 0.50, 0.96, 0.32, 0.35, 0.28, 1.18, 1.23, 1.19, 1.16)
+lipidsz[moltype] = (6.84, 7.48, 7.01, 7.11, 8.10, 8.66, 8.86, 8.54, 9.24, 9.70, 9.86, 10.41, 10.40, 9.60, 6.20, 5.77, 5.28, 4.34, 3.41, 4.86, 3.93, 3.02, 2.09)
+lipidsa.update({ "DPG3":(moltype, "A B C V A B C V A B C D E V AM1 AM2 T1A C2A C3A C1B C2B C3B C4B")})
 
 #Prototopology for longer and branched glycosil and ceramide based glycolipids
 #
@@ -207,7 +212,7 @@ lipidsa.update({      # 1     2    3    4    5   6   7   8   9    10    11    12
     "DXG1": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6 GM7 GM8 GM9  GM10  GM11  GM12  GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A  C4A  C5A   -   C1B  C2B  C3B  C4B  C5B  C6B"),
     "PNG1": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6 GM7 GM8 GM9  GM10  GM11  GM12  GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A   -    -    -   C1B  C2B  C3B  D4B  C5B  C6B"),
     "XNG1": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6 GM7 GM8 GM9  GM10  GM11  GM12  GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A  C4A  C5A   -   C1B  C2B  C3B  D4B  C5B  C6B"),
-    "DPG3": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6  -   -   -    -     -     -    GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A   -    -    -   C1B  C2B  C3B  C4B   -    - "),
+#    "DPG3": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6  -   -   -    -     -     -    GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A   -    -    -   C1B  C2B  C3B  C4B   -    - "),
     "DXG3": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6  -   -   -    -     -     -    GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A  C4A  C5A   -   C1B  C2B  C3B  C4B  C5B  C6B"),
     "PNG3": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6  -   -   -    -     -     -    GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A   -    -    -   C1B  C2B  C3B  D4B  C5B  C6B"),
     "XNG3": (moltype, "GM1  GM2  GM3  GM4  GM5 GM6  -   -   -    -     -     -    GM13  GM14 GM15  GM16  GM17   AM1   AM2  T1A  C2A  C3A  C4A  C5A   -   C1B  C2B  C3B  D4B  C5B  C6B"),
