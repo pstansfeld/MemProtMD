@@ -13,6 +13,9 @@ The references for each of the methods used in the workflows are cited below.
 
 <pre>Protein PDB File -> Memembed<sup>1</sup> -> martinize<sup>2</sup> -> insane<sup>3</sup> -> CGMD<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic PDB in membrane</pre>
 
+<u>[MemProtMD with Insane for a Membrane-ony system](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Insane_Membrane.ipynb)</u> - Assembly of a predefined membrane 
+
+<pre>insane<sup>3</sup> -> CG Membrane<sup>5</sup> -> CG2AT<sup>6</sup> -> Atomistic membrane</pre>
 
 <u>[MemProtMD Self Assembly](https://colab.research.google.com/github/pstansfeld/MemProtMD/blob/main/MemProtMD_Self_Assembly.ipynb)</u> - Self-Assembly of randomly oriented lipids into a bilayer around an input protein structure
 
