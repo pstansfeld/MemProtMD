@@ -1,16 +1,16 @@
 {
-  "timestamp": 1761750370149,
+  "timestamp": 1761759199039,
   "version": "5.1.2",
-  "current": "NMR0LTaT3xB9H0ZDh5v-_A",
+  "current": "s-BdxHyUVPnVzJGSuM9KbQ",
   "playback": {
     "isPlaying": false,
     "nextSnapshotDelayInMs": 1500
   },
   "entries": [
     {
-      "timestamp": 1761750370146,
+      "timestamp": 1761759199038,
       "snapshot": {
-        "id": "NMR0LTaT3xB9H0ZDh5v-_A",
+        "id": "s-BdxHyUVPnVzJGSuM9KbQ",
         "data": {
           "tree": {
             "transforms": [
@@ -1043,8 +1043,8 @@
                 "name": "on",
                 "params": {
                   "scale": 1,
-                  "color": 0,
                   "threshold": 0.33,
+                  "color": 0,
                   "includeTransparent": true
                 }
               },
@@ -1170,7 +1170,7 @@
               "staticMoving": true,
               "dynamicDampingFactor": 0.2,
               "minDistance": 5,
-              "maxDistance": 1269.6235110019709,
+              "maxDistance": 927.9357448413357,
               "gestureScaleFactor": 1,
               "maxWheelDelta": 0.02,
               "autoAdjustMinMaxDistance": {
@@ -1327,7 +1327,8 @@
           }
         },
         "durationInMs": 1500
-      }
+      },
+      "name": "AAC-CARD"
     }
   ]
 }
