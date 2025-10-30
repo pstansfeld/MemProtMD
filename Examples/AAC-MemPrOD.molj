@@ -28,8 +28,7 @@
                   "url": {
                     "kind": "url",
                     "id": "WAYfUnCUp75G9w_LcF15BA",
-                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/HeadGroup_contacts.pdb",
-                    "file": {}
+                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/HeadGroup_contacts.pdb"
                   },
                   "label": "",
                   "isBinary": false
@@ -259,8 +258,7 @@
                   "url": {
                     "kind": "url",
                     "id": "3pjR8FLtT7Q3gLt3d8iclA",
-                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/AcylTail_contacts.pdb",
-                    "file": {}
+                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/AcylTail_contacts.pdb"
                   },
                   "label": "",
                   "isBinary": false
@@ -515,8 +513,7 @@
                   "url": {
                     "kind": "url",
                     "id": "ACja83nvHkEfSz5iuyP2Qw",
-                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/Deformations.pdb",
-                    "file": {}
+                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/Deformations.pdb"
                   },
                   "label": "",
                   "isBinary": false
