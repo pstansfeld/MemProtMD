@@ -28,7 +28,7 @@
                   "file": {
                     "kind": "file",
                     "id": "WAYfUnCUp75G9w_LcF15BA",
-                    "name": "HeadGroup_contacts.pdb",
+                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/HeadGroup_contacts.pdb",
                     "file": {}
                   },
                   "label": "",
@@ -259,7 +259,7 @@
                   "file": {
                     "kind": "file",
                     "id": "3pjR8FLtT7Q3gLt3d8iclA",
-                    "name": "AcylTail_contacts.pdb",
+                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/AcylTail_contacts.pdb",
                     "file": {}
                   },
                   "label": "",
@@ -515,7 +515,7 @@
                   "file": {
                     "kind": "file",
                     "id": "ACja83nvHkEfSz5iuyP2Qw",
-                    "name": "Deformations.pdb",
+                    "name": "https://raw.githubusercontent.com/pstansfeld/MemProtMD/refs/heads/main/Examples/Deformations.pdb",
                     "file": {}
                   },
                   "label": "",
