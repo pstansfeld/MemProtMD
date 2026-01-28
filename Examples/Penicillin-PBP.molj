@@ -1,16 +1,16 @@
 {
-  "timestamp": 1763568184577,
-  "version": "5.4.1",
-  "current": "OaseoilAjjc4I86N5jNxQg",
+  "timestamp": 1769604942776,
+  "version": "5.6.0",
+  "current": "iCjFUmGW_B8T3ZV_re6Jmw",
   "playback": {
     "isPlaying": false,
     "nextSnapshotDelayInMs": 1500
   },
   "entries": [
     {
-      "timestamp": 1763476886503,
+      "timestamp": 1769604885417,
       "snapshot": {
-        "id": "OaseoilAjjc4I86N5jNxQg",
+        "id": "iCjFUmGW_B8T3ZV_re6Jmw",
         "data": {
           "tree": {
             "transforms": [
@@ -52,7 +52,11 @@
               {
                 "parent": "mUUJ7rwud_CmVXsOZjqv5g",
                 "transformer": "ms-plugin.trajectory-from-mmcif",
-                "params": {},
+                "params": {
+                  "loadAllBlocks": false,
+                  "blockHeader": "8F3W",
+                  "blockIndex": 0
+                },
                 "ref": "-S6zDhzj4UkULcfPQDJvOQ",
                 "version": "bJetXP4VLTSm70oEkFX34w"
               },
@@ -285,12 +289,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 1,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic",
                         "spheres"
@@ -299,6 +313,7 @@
                       "probeRadius": 1.4,
                       "resolution": 0.5,
                       "probePositions": 36,
+                      "floodfill": "off",
                       "ignoreHydrogens": false,
                       "ignoreHydrogensVariant": "all",
                       "traceOnly": false,
@@ -365,7 +380,7 @@
                   "polymer"
                 ],
                 "ref": "6F3sIjhFVK0r6UC9RsbhDw",
-                "version": "UiIksQPSQMvWoaBgDVFykw"
+                "version": "Epjn2bXFFgmQtCGsVDwjug"
               },
               {
                 "parent": "LVyaG0zltRqh0zqOJ_TF4w",
@@ -415,12 +430,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -533,7 +558,7 @@
                   "ligand"
                 ],
                 "ref": "gNzWyz1owpuNrkWNqyGidA",
-                "version": "AjPMt47YR84N7o6A5X_REg"
+                "version": "sKom9DI2KQ5a-BRiIytGzg"
               },
               {
                 "parent": "LVyaG0zltRqh0zqOJ_TF4w",
@@ -582,12 +607,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": true,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -702,7 +737,7 @@
                   "structure-focus-target-repr"
                 ],
                 "ref": "eaUd66NnFwI91IBE90nGKw",
-                "version": "uRB6B1dSUwpSy3-MJBpWow"
+                "version": "RJPmtJB_yO3a3wojFTOrjA"
               },
               {
                 "parent": "LVyaG0zltRqh0zqOJ_TF4w",
@@ -752,12 +787,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -872,7 +917,7 @@
                   "structure-focus-surr-repr"
                 ],
                 "ref": "3dEoDqcewRWhV16uaTdbSg",
-                "version": "qFXHHfT31lVisDQvxNsaPg"
+                "version": "Z7HZvgS973gXE1xoyvKgtQ"
               },
               {
                 "parent": "WJOo4AgjfytvFEa9H2K5QQ",
@@ -905,12 +950,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -952,7 +1007,7 @@
                   "structure-focus-surr-nci-repr"
                 ],
                 "ref": "s2LsnooFjOU7QR_X1O30lA",
-                "version": "ccddkl3V9RMB3k9L-x-WPQ"
+                "version": "GquuxkNh4a0QZhgWqe50ZA"
               },
               {
                 "parent": "tpkecnCmF1AJmS3i9BIN5g",
@@ -988,6 +1043,16 @@
                   "transparentBackfaces": "off",
                   "bumpFrequency": 0,
                   "bumpAmplitude": 1,
+                  "interior": {
+                    "color": 5000268,
+                    "colorStrength": 1,
+                    "substance": {
+                      "metalness": 0,
+                      "roughness": 1,
+                      "bumpiness": 0
+                    },
+                    "substanceStrength": 1
+                  },
                   "cellColor": 16753920,
                   "cellScale": 2,
                   "ref": "model",
@@ -1132,6 +1197,7 @@
             "cameraResetDurationMs": 250,
             "sceneRadiusFactor": 1,
             "transparentBackground": false,
+            "checkeredTransparentBackground": true,
             "dpoitIterations": 2,
             "pickPadding": 3,
             "userInteractionReleaseMs": 250,
@@ -1163,13 +1229,8 @@
                 "params": {}
               },
               "outline": {
-                "name": "on",
-                "params": {
-                  "scale": 1,
-                  "threshold": 0.33,
-                  "color": 0,
-                  "includeTransparent": true
-                }
+                "name": "off",
+                "params": {}
               },
               "dof": {
                 "name": "off",
@@ -1254,9 +1315,6 @@
             "renderer": {
               "backgroundColor": 16579577,
               "pickingAlphaThreshold": 0.5,
-              "interiorDarkening": 0.5,
-              "interiorColorFlag": true,
-              "interiorColor": 5000268,
               "colorMarker": true,
               "highlightColor": 16737945,
               "selectColor": 3407641,
@@ -1354,6 +1412,16 @@
               "transparentBackfaces": "off",
               "bumpFrequency": 0,
               "bumpAmplitude": 1,
+              "interior": {
+                "color": 5000268,
+                "colorStrength": 1,
+                "substance": {
+                  "metalness": 0,
+                  "roughness": 1,
+                  "bumpiness": 0
+                },
+                "substanceStrength": 1
+              },
               "enabled": "off",
               "color": 8421504,
               "hitColor": 16761035
@@ -1376,7 +1444,7 @@
           "options": {
             "hydrogens": "all",
             "visualQuality": "auto",
-            "ignoreLight": true,
+            "ignoreLight": false,
             "materialStyle": {
               "metalness": 0,
               "roughness": 1,
@@ -1451,14 +1519,12 @@
         },
         "durationInMs": 1500
       },
-      "key": "",
-      "name": "Structure of PBP1",
-      "description": "Penicillin bound PBP"
+      "name": "Structure of PBP1"
     },
     {
-      "timestamp": 1763476912608,
+      "timestamp": 1769604915629,
       "snapshot": {
-        "id": "szddrFIKnQVtrU8l6CvG0A",
+        "id": "EgES5-HDl3_oJDYtN9rfNQ",
         "data": {
           "tree": {
             "transforms": [
@@ -1733,12 +1799,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 1,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic",
                         "spheres"
@@ -1747,6 +1823,7 @@
                       "probeRadius": 1.4,
                       "resolution": 0.5,
                       "probePositions": 36,
+                      "floodfill": "off",
                       "ignoreHydrogens": false,
                       "ignoreHydrogensVariant": "all",
                       "traceOnly": false,
@@ -1813,7 +1890,7 @@
                   "polymer"
                 ],
                 "ref": "6F3sIjhFVK0r6UC9RsbhDw",
-                "version": "UiIksQPSQMvWoaBgDVFykw"
+                "version": "qgfTQtvCd6w90Ma726PFgQ"
               },
               {
                 "parent": "LVyaG0zltRqh0zqOJ_TF4w",
@@ -1863,12 +1940,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -1981,7 +2068,7 @@
                   "ligand"
                 ],
                 "ref": "gNzWyz1owpuNrkWNqyGidA",
-                "version": "AjPMt47YR84N7o6A5X_REg"
+                "version": "pgJ6fcv549Dnlx32Dl8hTg"
               },
               {
                 "parent": "LVyaG0zltRqh0zqOJ_TF4w",
@@ -2010,7 +2097,7 @@
                   "structure-focus-target-sel"
                 ],
                 "ref": "vAoUezaimqnAeexRlxW2Pw",
-                "version": "U4BzQXl5P5xe3I25Oik2vg"
+                "version": "qgnBLyM1vPj-JoMUgI0g1g"
               },
               {
                 "parent": "vAoUezaimqnAeexRlxW2Pw",
@@ -2043,12 +2130,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": true,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -2163,7 +2260,7 @@
                   "structure-focus-target-repr"
                 ],
                 "ref": "eaUd66NnFwI91IBE90nGKw",
-                "version": "uRB6B1dSUwpSy3-MJBpWow"
+                "version": "qW58rqiw-XFLKQL9AOcBfQ"
               },
               {
                 "parent": "LVyaG0zltRqh0zqOJ_TF4w",
@@ -2235,7 +2332,7 @@
                   "structure-focus-surr-sel"
                 ],
                 "ref": "WJOo4AgjfytvFEa9H2K5QQ",
-                "version": "XUu9IeKpAaGeuYJdXNyxqg"
+                "version": "AKb1KKo8J07JQx0C49WUmQ"
               },
               {
                 "parent": "WJOo4AgjfytvFEa9H2K5QQ",
@@ -2268,12 +2365,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -2388,7 +2495,7 @@
                   "structure-focus-surr-repr"
                 ],
                 "ref": "3dEoDqcewRWhV16uaTdbSg",
-                "version": "qFXHHfT31lVisDQvxNsaPg"
+                "version": "4NqAnOB5wtdh1FXgQ1qcBg"
               },
               {
                 "parent": "WJOo4AgjfytvFEa9H2K5QQ",
@@ -2421,12 +2528,22 @@
                       "doubleSided": false,
                       "flipSided": false,
                       "flatShaded": false,
-                      "ignoreLight": true,
+                      "ignoreLight": false,
                       "celShaded": false,
                       "xrayShaded": false,
                       "transparentBackfaces": "off",
                       "bumpFrequency": 0,
                       "bumpAmplitude": 1,
+                      "interior": {
+                        "color": 5000268,
+                        "colorStrength": 1,
+                        "substance": {
+                          "metalness": 0,
+                          "roughness": 1,
+                          "bumpiness": 0
+                        },
+                        "substanceStrength": 1
+                      },
                       "unitKinds": [
                         "atomic"
                       ],
@@ -2468,7 +2585,7 @@
                   "structure-focus-surr-nci-repr"
                 ],
                 "ref": "s2LsnooFjOU7QR_X1O30lA",
-                "version": "ccddkl3V9RMB3k9L-x-WPQ"
+                "version": "qKS-WkBBXpKsrZ2X-FF0Tw"
               },
               {
                 "parent": "tpkecnCmF1AJmS3i9BIN5g",
@@ -2648,6 +2765,7 @@
             "cameraResetDurationMs": 250,
             "sceneRadiusFactor": 1,
             "transparentBackground": false,
+            "checkeredTransparentBackground": true,
             "dpoitIterations": 2,
             "pickPadding": 3,
             "userInteractionReleaseMs": 250,
@@ -2679,13 +2797,8 @@
                 "params": {}
               },
               "outline": {
-                "name": "on",
-                "params": {
-                  "scale": 1,
-                  "threshold": 0.33,
-                  "color": 0,
-                  "includeTransparent": true
-                }
+                "name": "off",
+                "params": {}
               },
               "dof": {
                 "name": "off",
@@ -2770,9 +2883,6 @@
             "renderer": {
               "backgroundColor": 16579577,
               "pickingAlphaThreshold": 0.5,
-              "interiorDarkening": 0.5,
-              "interiorColorFlag": true,
-              "interiorColor": 5000268,
               "colorMarker": true,
               "highlightColor": 16737945,
               "selectColor": 3407641,
@@ -2870,6 +2980,16 @@
               "transparentBackfaces": "off",
               "bumpFrequency": 0,
               "bumpAmplitude": 1,
+              "interior": {
+                "color": 5000268,
+                "colorStrength": 1,
+                "substance": {
+                  "metalness": 0,
+                  "roughness": 1,
+                  "bumpiness": 0
+                },
+                "substanceStrength": 1
+              },
               "enabled": "off",
               "color": 8421504,
               "hitColor": 16761035
@@ -2914,7 +3034,7 @@
           "options": {
             "hydrogens": "all",
             "visualQuality": "auto",
-            "ignoreLight": true,
+            "ignoreLight": false,
             "materialStyle": {
               "metalness": 0,
               "roughness": 1,
@@ -2989,9 +3109,7 @@
         },
         "durationInMs": 1500
       },
-      "key": "",
-      "name": "Zoomed-in view of Penicillin",
-      "description": ""
+      "name": "Zoom-in"
     }
   ]
 }
